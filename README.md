@@ -151,13 +151,34 @@ Target audience:
 
 ![image](https://github.com/sikmat/Cloud-Computing/assets/111583727/938dd800-b758-478b-80da-441d3490fab7)
 
+## The Computing Resources Life Cycle
 
+CSPs cannot predict when users will place their requests, how many resources they will require, the magnitude of those resources, and the duration they will retain those resources, the design must ensure a surplus of resources is constantly accessible for use. 
 
+The CSP must monitor all resource usage so that users can be accurately charged based on a pay-as-you-go model. When users are done using the resources, the cloud platform must reintegrate those resources into the pool of available resources for other users to utilize.
 
+There are instances where a service provider may not be able to foresee a customer's requirements. In such cases, it is typical for a service provider to enhance capacity by resorting to a third-party service provider.
 
+### Understanding Self-Service Provisioning and Elasticity
 
+With _self-service_, cloud consumers can use a website in the cloud to select and purchase cloud services, configure them, launch them into the cloud environment, and start using them within minutes or perhaps even seconds.
 
+Elasticity, means cloud resources can automatically change their own provisioned size. The basic meaning of elasticity is that many cloud resources can be selected at a specific size or quantity, but when the usage of those resources starts to approach the original size, they automatically increase their own size.
 
+### Establishing a Dynamic Life Cycle across Workloads and Data
+
+A cloud is a combination of resources that may be spread across systems and geographies. A workload is an independent service or collection of code that can be executed. So, you need to think about the cloud as a group of workloads that are managed as though they were a single cohesive environment. Within a well-designed cloud or multicloud environment, workloads and data can move across multiple cloud providers, geographic regions, or service levels. Because, in the real world, you will use a combination of services, it’s important to think not just about an individual workload but also about a combination of workloads and how they interact with each other and with collaborators.
+
+Other issues to consider include locating workloads and data in the same region as your primary customers to optimize performance, understanding the life cycle of your application and data to select optimizations based on increasing — or decreasing — demand, and even moving workloads to alternate cloud providers when the differential of costs, reliability, or features make it advantageous.
+
+### Management Services
+
+Management services are mandatory for ensuring that the operation of your cloud workloads and resources meets constituent needs (whether they are customer, employee, or partner) needs. This is the case regardless of the cloud deployment and delivery model
+
+- Network monitoring and management is critical because outages and slowdowns can have a dramatic impact on the customer experience of cloud applications.
+- Application and workload health monitoring can provide warnings of impending problems and can inform a support organization so they can provide the best service to customers.
+- Security and governance are key services that ensure your applications and data are protected.
+- Data management in a hybrid environment is also critical since data will be moving between cloud and physical environments.
 
 
 
