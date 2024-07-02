@@ -208,11 +208,23 @@ Years ago, your company moved its data center to a virtualized environment to re
 
 ## Understanding IT Transformation
 
+Cloud computing is changing the role of IT from managing data centers to overseeing and managing a mix of cloud and on-premises services. IT needs to help businesses integrate data and processes across different systems and ensure security and compliance. This may require modernizing legacy applications to make them more flexible. Companies that invest in cloud technologies and application modernization will be more successful in transforming their IT infrastructure.
 
+## Escaping the IT Legacy Trap
 
+Legacy applications, though crucial for businesses, are often outdated and difficult to update due to their complex architecture. Simply moving them to the cloud isn't effective. It's expensive because all dependent applications need to be migrated as well. Additionally, these applications weren't built for the cloud's efficiency, so they'll require a lot of resources and offer no real benefit in their new environment.
 
+_What is the solution? The applications have to be transformed and modernized, which means that dependencies are removed from the applications. The application is redesigned as a set of modular services. When possible, frequently used services are written once and reused. The bottom line is that it is imperative that these legacy applications are updated and modernized to gain the innovation benefits of the cloud._
 
+## Preparing for the Cloud
 
+You have to make sure that everyone is educated about what the cloud can and can’t do. Everyone should understand how the cloud would play a pivotal role in redefining the pace of business. It should be clear to everyone that adopting the cloud for the business is a team sport and requires that IT and business units collaborate. It also means that there needs to be a balance between total freedom to use whatever cloud or cloud services that seems useful and the need for management of computing. The more that everyone understands about responsibility and goals for the cloud, the more successful the company will be. Have a well-established set of guidelines that are agreed upon and well understood.
+
+Moving to the cloud requires modernizing applications or finding cloud-based SaaS options. Here's how to approach it:
+
+1. **Modernization vs SaaS:** Evaluate if existing applications can be modernized for the cloud or if cloud-based SaaS applications are a better fit for current business needs.
+2. **SaaS Implementation:** If SaaS is chosen, consider how it will be used, any needed process changes, and department adoption. Negotiate a favorable licensing agreement with the vendor.
+3. **DevOps adoption:** Cloud environments benefit from DevOps practices, which combine development and operations for faster software delivery. This might be a new approach for some businesses but is still essential.
 
 
 
