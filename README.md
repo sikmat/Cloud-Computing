@@ -60,13 +60,37 @@ _Automation_ is a process that’s triggered based on business rules, resource a
 2. Data center, where services are hosted.
 3. The Network connection the first two components.
 
-### Types of Cloud Computing
+### Types of Cloud Computing/Deployment Models
 There are two deployement models to managing cloud service infrastructure, and a third being a combination of the two:
 
-**Public cloud**:  A CSP owns the cloud deployment and allocates its resources to external, unaffiliated customers. Those customers share the public cloud’s resources without knowing precisely where their data is in relation to that of any other organization.
-**Private cloud**:  Services are provided to only a single organization.
-**Hybrid cloud**:  There is a combination of two or more private, public, or community deployments.
-_Multicloud_ is the use of a variety of piublic cloud services, to support different business units/functions. This then referred to a multicloud environment. It allows developers to access the platform of their choice with ease, and the business has that flexibility to move between vendors.
+**Public cloud**:  A CSP owns the cloud deployment and allocates its resources to external, unaffiliated customers. Those customers share the public cloud’s resources without knowing precisely where their data is in relation to that of any other organization. The _public cloud_ is a set of hardware, networking, storage, storage, services, applications, and interfaces owned and operated by a third party for use by other companies.
+
+**Private cloud**:  Services are provided to only a single organization. similar to public cloud, but tools are owned and operated by an organization for the use of its employees, partners, or customers. It can be created and managed by a third party for the exclusive use of one enterprise. It is a highly controlled environment, sitting behind a firewall. Meaning it's not open for public use. It is highly automated with a focus on governance, security, and compliance.
+
+**Hybrid cloud**:  There is a combination of two or more private, public, or community deployments. A hybrid I is a combination of a private cloud combined with the use of public cloud services where the two cloud environments work together to solve business problems. The goal is to create a hybrid cloud environment that can combine services and data from a variety of cloud models to create a unified, automated, and well-managed computing environment
+
+**Deployment Models**
+![image](https://github.com/sikmat/Cloud-Computing/assets/111583727/c3524f83-3634-442f-bb90-15bb871bf104)
+
+_Multicloud_ is the use of a variety of public cloud services, to support different business units/functions. This then referred to a multicloud environment. It allows developers to access the platform of their choice with ease, and the business has that flexibility to move between vendors.
+
+Combining multiple public services with private clouds and the data center is the definition of _corporate computing_.
+
+A cloud is hybrid or multi in the following situations:
+
+- If a company uses a public development platform that sends data to a private cloud or a data center–based application, the cloud is hybrid.
+- When a company leverages a number of SaaS applications and moves data between private or data center resources, the cloud is hybrid.
+- When a business process is designed as a service so that it can connect with environments as though they were a single environment, the cloud is hybrid.
+- When a SaaS analytics platform is used and data from multiple cloud sources are ingested.
+- When your organization can move workloads to different public clouds based on cost or performance concerns.
+
+**Virtual Private Cloud**: means a public CSP hosts your organization's cloud services in an isolated segment, separated from any resources shared with other companies. Your cloud services exist in a public cloud but those resources are private and unshared.
+
+
+
+
+
+
 
 
 
