@@ -180,6 +180,40 @@ Management services are mandatory for ensuring that the operation of your cloud 
 - Security and governance are key services that ensure your applications and data are protected.
 - Data management in a hybrid environment is also critical since data will be moving between cloud and physical environments.
 
+## The Changing Role of the Data Center
+
+When companies implement hybrid clouds, their data centers don't disappear. Most medium and large companies still need their own data centers for essential systems like accounting and inventory. Many data centers have developed over decades and house a mix of hardware, operating systems, and applications, which can be expensive to maintain.
+
+To improve efficiency, companies use technologies like server virtualization, which separates software from hardware by using virtual machines. This makes managing applications on servers easier.
+
+Despite these improvements, cloud computing shows that more can be done. Companies are now evaluating how to best use their traditional data centers along with private, public, hybrid, and multicloud environments to manage workloads and data effectively.
+
+_There are still good reasons to run certain workloads on premises — for example, legacy applications that are not prepared to take advantage of the scalability and elasticity of the cloud, or applications that have dependencies on external services or hardware that are not available in the cloud. In many cases, there may simply not be a reasonable business case to move an application to the cloud._
+
+### Evolution of the Data Centre into a Private Cloud
+
+IT organizations have discovered that it’s much more efficient and effective to create private cloud services for developers to create new applications and services. Therefore, companies are setting up a highly automated computing environment enabled with a self-service portal. This portal is often designed with business process rules that dictate what services a developer or an authorized partner can use. 
+
+### Seeing how the Public Cloud Fits
+
+Mr. Price, a retailer, uses a public cloud for its annual sale, expanding this year to Zimbabwe and Mauritius. The global cloud provider simplifies application setup and takedown in these regions, saving on server costs. Mr. Price also adopts cloud-based CRM and human resources platforms, forming a hybrid cloud with their on-premises data center. This integration enhances sales performance and avoids extra hardware and IT expenses. The public cloud enables quick service launches, providing a competitive edge, while the hybrid setup allows for efficient data management and analytics, creating new revenue opportunities.
+
+### Knowing When the Private Cloud Shines
+
+In some cases, a private cloud is preferable to a public cloud, especially for sensitive applications and data. Imagine you are an IT manager at a financial services company that offers products to global business partners via an online portal. While it makes sense to use a public cloud for the portal due to its wide reach, legal requirements mandate that sensitive financial data be stored in a physical data center. A private cloud, integrated with the public cloud to form a hybrid cloud, meets these needs by providing scalability and legal compliance.
+
+Years ago, your company moved its data center to a virtualized environment to reduce costs and manage workloads better. However, this led to "virtual machine sprawl," making management difficult. The company aimed to transition to a public cloud but needed to control VM sprawl and update some applications to be cloud-ready. They created a private cloud as an intermediary step, using it to upgrade applications and manage VMs before moving to the public cloud. This approach minimized risks and improved management, ultimately leaving them with a modern private cloud and a hybrid cloud setup for efficient data and workload management.
+
+# EMbracing the Business Imperative
+
+## Understanding IT Transformation
+
+
+
+
+
+
+
 
 
 
