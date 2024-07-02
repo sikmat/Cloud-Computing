@@ -72,7 +72,7 @@ There are two deployement models to managing cloud service infrastructure, and a
 **Deployment Models**
 ![image](https://github.com/sikmat/Cloud-Computing/assets/111583727/c3524f83-3634-442f-bb90-15bb871bf104)
 
-_Multicloud_ is the use of a variety of public cloud services, to support different business units/functions. This then referred to a multicloud environment. It allows developers to access the platform of their choice with ease, and the business has that flexibility to move between vendors.
+**Multicloud**: is the use of a variety of public cloud services, to support different business units/functions. This then referred to a multicloud environment. It allows developers to access the platform of their choice with ease, and the business has that flexibility to move between vendors. Multi-cloud deployments reduce reliance on a single vendor, provide greater service flexibility and choice, permit improved geographic control of data, and help manage disaster mitigation.
 
 Combining multiple public services with private clouds and the data center is the definition of _corporate computing_.
 
@@ -84,7 +84,20 @@ A cloud is hybrid or multi in the following situations:
 - When a SaaS analytics platform is used and data from multiple cloud sources are ingested.
 - When your organization can move workloads to different public clouds based on cost or performance concerns.
 
-**Virtual Private Cloud**: means a public CSP hosts your organization's cloud services in an isolated segment, separated from any resources shared with other companies. Your cloud services exist in a public cloud but those resources are private and unshared.
+**Virtual Private Cloud**(Cloud within a Cloud): means a public CSP hosts your organization's cloud services in an isolated segment, separated from any resources shared with other companies. Your cloud services exist in a public cloud but those resources are private and unshared.
+
+VPCs are an example of _single-tenant deployment_. Here are some key differences between VPC and Private cloud deployment:
+- VPC - is logical isolation of the cloud deplyment that resides on a CSP's infrastructure, and is therefore scalable.
+- Private cloud - is physical isolation of the cloud deployment in a private data center, a community data center, or CSP's infrastructure. It is limited by the available hardware and therefore less scalable.
+
+**Multitenancy**: is the the concept behind public cloud deployments. Multiple consumers, known as tenants, share computing resources owned and managed by the CSP. This is the opposite idea from VPC deployment, where it's a single tenant deployment. Multitenancy provides the cost benefits behind shared resource use. Although customers are sharing resources, their individual configurations and data are isolated.
+
+### Cloud Computing Elements
+These are the related elements that come together to create clouds. On the bottom is a set of resource pools that feed a set of cloud delivery services. On the top are the common service elements needed to support the delivery models. 
+
+![image](https://github.com/sikmat/Cloud-Computing/assets/111583727/8eb2ee70-ea45-472f-89de-7fe23a9ba201)
+
+
 
 
 
