@@ -97,8 +97,45 @@ These are the related elements that come together to create clouds. On the botto
 
 ![image](https://github.com/sikmat/Cloud-Computing/assets/111583727/8eb2ee70-ea45-472f-89de-7fe23a9ba201)
 
+## Cloud Delivery Models
 
+### Infrastructure as a Service (IaaS)
+The hardware infrastructure is provided to the consumer. The consumer assumes responsibility for all layers above that hardware, including an operating system, storage, networking, and various utility software elements, on a request basis. The CSP manages hardware failures, firmware updates, device drivers, and hardware compatibility. The consumer installs and manages the operating system on top of the hardware as well as any services and applications that run above that operating system.
 
+In the _public IaaS_, the public cloud provider creates the infrastructure and resources that consumer can use. The user simply needs a credit card to acquire these resources. When that user stops paying, the resource may disappear. 
+
+In a _private IaaS_ service, it is usually the IT organization or an integrator who creates an infrastructure and resources that internal users and sometimes business partners can use on demand.
+
+IaaS examples:
+- AWS EC2
+- Azure
+- Rackspace
+- Digital Ocean
+
+Target audience:
+IT administrators
+
+![image](https://github.com/sikmat/Cloud-Computing/assets/111583727/528e3f02-3d5c-4745-844a-95de5baa2e73)
+
+### Platform as a Service (PaaS)
+The service structure is provided by the CSP. It is up to the consumer to populate that structure, manage it on a day-to-day basis, and assume responsibility for the content. Support for the hardware, as well as the service platform that hosts the content, is offloaded to the CSP. The easiest way to think about PaaS is that it’s an IaaS, but the operating system and development tools are already in place. Because a PaaS environment is ready for development, productivity and time to value are greatly increased.
+
+_A PaaS environment brings development and deployment together to create a more manageable way to build and deploy applications. A PaaS requires an Infrastructure service._
+
+PaaS examples:
+- Google App Engine
+- Heroku
+- AWS ElasticBeanstalk
+- Salesforce
+  
+Target audience:
+- Developers
+- DBAs
+
+![image](https://github.com/sikmat/Cloud-Computing/assets/111583727/f68c4fe0-c710-48ca-a06e-8ce80483b6d9)
+
+### Software as a Service (SaaS)
+The consumer is being provided with the direct use of the software. Responsibility for the hardware where that software runs, the operating system upon which it runs, and the installation and patching of the software itself are all offloaded to the CSP.
 
 
 
