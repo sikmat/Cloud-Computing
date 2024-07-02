@@ -267,9 +267,29 @@ Offering compelling offerings that solve customer problems encourages them to bu
 
 The cloud can help by making it easy to experiment with your business model via the agility and flexibility. Instead of changing your business completely overnight, you can set up a subsidiary division or even a stand-alone business, perhaps with a different name and brand. Treat it as a real business but limit the number of customers or services to keep it less complicated, and see whether you get the traction you need. If you do, you can grow the new business at your own rate.
 
+# Part 2: Cloud Architecture Considerations
 
+## Type of Constituents Your Cloud Serves
 
+- **Cloud consumers**:  The individuals and groups within your business unit that use different types of cloud services to get a task accomplished. A cloud consumer could be a developer using computing services from a public cloud.
+- **Direct customers**:  Users who often take advantage of services that your business has created within a cloud environment. End users of your service have no idea that you are using a public or private cloud. As far as the users are concerned, they are interacting directly with your services and value.
+- **Cloud service provider**:  Commercial vendors or companies that create their own capabilities. Commercial vendors sell their services to cloud consumers. In contrast, a company might decide to become an internal cloud service provider to its own employees, partners, and customers — either as an internal service or as a profit center. These providers also create applications or services for these environments.
 
+The approach to cloud architecture depends on whether your organization is a consumer or a provider of cloud services. As a consumer, focus on selecting the right services that meet your business needs and ensure they are integrated effectively. Avoid creating isolated silos by leveraging containerization and microservices, which abstract content from underlying platforms for easier management.
 
+In contrast, cloud service providers, whether commercial vendors or internal private clouds, must meticulously architect their environments. They design applications and services optimized for the cloud, ensuring consistency and long-term support for customers. Providers must create environments that seamlessly integrate with partner ecosystems to maximize service delivery efficiency.
 
+#### Putting the Pieces Together
+
+Components of a cloud model from an architectural perspective
+
+![image](https://github.com/sikmat/Cloud-Computing/assets/111583727/5c5b09d1-f190-4cbe-a10f-c86072ae8019)
+
+**Figure 12**: The NIST Cloud Reference Model provides a depiction of the various services needed to operate in the cloud.
+
+On the left side of Figure 12, the cloud service consumer represents the types of uses of cloud services. 
+In addition, this model depicts the role of the cloud auditor. This organization provides oversight either by an internal or an external group that makes sure that the consumer group meets its obligations.
+Cloud service providers might be a commercial company or a corporation that decides to become their own cloud service operator. Cloud providers may provide the underlying physical and virtualized resources needed to run various cloud services. They also may create the actual applications and business services that operate in these environments.
+
+_The cloud provider has to support all the important cloud models. In addition to supporting the physical and virtual environment, it is important to remember that all these cloud models and the supporting environment must be linked together in the form of service orchestration. Without service orchestration, each service would become an independent silo._
 
