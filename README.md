@@ -135,7 +135,26 @@ Target audience:
 ![image](https://github.com/sikmat/Cloud-Computing/assets/111583727/f68c4fe0-c710-48ca-a06e-8ce80483b6d9)
 
 ### Software as a Service (SaaS)
-The consumer is being provided with the direct use of the software. Responsibility for the hardware where that software runs, the operating system upon which it runs, and the installation and patching of the software itself are all offloaded to the CSP.
+The consumer is being provided with the direct use of the software. Responsibility for the hardware where that software runs, the operating system upon which it runs, and the installation and patching of the software itself are all offloaded to the CSP. Software as a Service (SaaS) is a business application created and hosted by a provider in a multi-tenant model. 
+
+_The SaaS application sits on top of both a Platform as a Service and foundational Infrastructure services._
+
+SaaS examples:
+- Microsoft Office 365
+- Google Apps
+- WebEx
+- Dropbox
+- Netflix
+
+Target audience:
+- End users
+
+![image](https://github.com/sikmat/Cloud-Computing/assets/111583727/938dd800-b758-478b-80da-441d3490fab7)
+
+
+
+
+
 
 
 
