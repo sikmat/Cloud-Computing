@@ -279,7 +279,7 @@ The approach to cloud architecture depends on whether your organization is a con
 
 In contrast, cloud service providers, whether commercial vendors or internal private clouds, must meticulously architect their environments. They design applications and services optimized for the cloud, ensuring consistency and long-term support for customers. Providers must create environments that seamlessly integrate with partner ecosystems to maximize service delivery efficiency.
 
-#### Putting the Pieces Together
+### Putting the Pieces Together
 
 Components of a cloud model from an architectural perspective
 
@@ -292,4 +292,58 @@ In addition, this model depicts the role of the cloud auditor. This organization
 Cloud service providers might be a commercial company or a corporation that decides to become their own cloud service operator. Cloud providers may provide the underlying physical and virtualized resources needed to run various cloud services. They also may create the actual applications and business services that operate in these environments.
 
 _The cloud provider has to support all the important cloud models. In addition to supporting the physical and virtual environment, it is important to remember that all these cloud models and the supporting environment must be linked together in the form of service orchestration. Without service orchestration, each service would become an independent silo._
+
+## Planning for Deployment
+
+The hybrid cloud is not a single architectural model, but a combination of many different services that are on different platforms. In the hybrid cloud, you will never bring all services and elements together as though they were one system. Instead, you need to have a clear understanding of the distributed services and how they relate to each other. Many of the approaches require the creation of best-practices templates that can be used to create the right linkages between services. 
+
+One of the best practices needed is to be able to keep track of what task a specific service executes, the rules for how it can be used, as well as definitions and dependencies. A well-designed hybrid cloud environment must be built to support change.
+
+**Hybrid models have four primary architectural considerations:**
+
+**1. Latency and Performance**
+
+When planning a hybrid cloud, consider performance (latency) across your entire environment. Here's how to manage latency in a hybrid cloud:
+
+- **Critical applications:** Keep transaction processing and applications requiring frequent data access on-premises or in a private cloud for faster response times.
+- **SaaS applications:** Use SaaS for applications like customer management where occasional latency is acceptable.
+- **Service location:** Consider data exchange needs between services when choosing their location in a public cloud.
+- **Flexibility:** Design your cloud architecture to be adaptable for future performance needs. 
+- **Composite services:** Combine public cloud services with private cloud or on-premises resources for complex applications, placing each part based on its performance needs. 
+
+A service-based approach to cloud computing involves tightly coupling critical services for low latency. This means these services communicate directly for faster performance. 
+
+Here's how to achieve this:
+
+- **Microservices in containers:** Break down large applications into smaller, modular microservices and place them in containers.
+- **Orchestration services:** Use orchestration services to manage the lifecycle and communication of these containers.
+- **APIs with caching:** Implement well-defined APIs with caching mechanisms to ensure services can access data quickly, even if it's located outside the cloud environment.
+
+By following these best practices, you can build a high-performing hybrid cloud architecture.
+
+**2. Security: Planning in Context**
+
+Before building your hybrid cloud, consider how sensitive your customer data is.  For public information like product specs, a basic cloud setup might be fine. But for private data like health records, you'll need a more secure cloud environment to meet customer expectations.  Basically, security needs to be planned from the start, not as an afterthought. 
+
+**3. Governance: Getting the right balance**
+
+Just like security, rules and regulations (governance) affect how you design your hybrid cloud. Here's what to consider:
+
+- **Industry regulations:** Some industries have strict data handling practices. Choose cloud partners who meet these standards. 
+- **Data privacy laws:** Some countries require data to be stored locally. Make sure your cloud provider can comply with these laws.
+- **Process management:** You might need tools to track where data is stored based on regulations.
+- **Cloud provider capabilities:**  Verify your cloud provider can meet your specific requirements, like data storage location.
+
+Basically, plan your cloud environment with regulations in mind to avoid compliance issues. 
+
+**Managing Colocation**
+
+Building a good hybrid cloud is about compromise. Here's why:
+
+* **Cost matters:** You can't ignore cost entirely. Some applications might be too expensive to run in the public cloud and are better suited for on-premises servers.
+* **Application fit:** Not all applications benefit from the cloud. Some may run slower or require special features that on-premises servers can provide better. 
+* **Planning is key:** Carefully consider which applications work well in the cloud and which are better off staying on-premises. This creates a balanced and cost-effective hybrid cloud environment. 
+
+
+
 
