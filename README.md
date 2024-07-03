@@ -338,12 +338,47 @@ Basically, plan your cloud environment with regulations in mind to avoid complia
 
 **Managing Colocation**
 
-Building a good hybrid cloud is about compromise. Here's why:
+In managing a hybrid cloud environment, compromise is necessary to balance performance and cost. Start by selecting applications that align with the benefits and limitations of the cloud. Applications unsuitable for a public cloud should remain on-premises, either on traditional middleware or in a private cloud. Careful architectural planning ensures that applications and services are well-positioned to support a hybrid cloud environment effectively.
 
-* **Cost matters:** You can't ignore cost entirely. Some applications might be too expensive to run in the public cloud and are better suited for on-premises servers.
-* **Application fit:** Not all applications benefit from the cloud. Some may run slower or require special features that on-premises servers can provide better. 
-* **Planning is key:** Carefully consider which applications work well in the cloud and which are better off staying on-premises. This creates a balanced and cost-effective hybrid cloud environment. 
+**4. Reliability in the Context of Change**
 
+Companies often assume cloud computing is an all-or-nothing model, but it is part of an overall distributed architectural plan. It's important to consider business, performance, and customer goals, including latency and data management. Tightly coupled services with many dependencies may suffer in a public cloud, while well-defined, loosely coupled services perform well. Most organizations need a mix of data center, private cloud, and public cloud services. A holistic architectural approach ensures customer satisfaction and protection. Some vendors offer unified platforms with various deployment options, facilitating a flexible and adaptable architecture.
 
+## Setting the Right Policies and Business Rules
+
+Companies usually think about policies and business rules from a broad governance perspective. However,making policies and rules operational in a hybrid cloud environment means that these must be integrated from an architectural perspective.
+
+In an on-premises setup, incorporating a policy into an application is straightforward. In a hybrid environment, you need to ensure these policies can be applied across components.
+
+For example, if a policy requires that personal data about French customers is stored in a physical server in France, this policy must be designed as a middleware service that controls the movement of data based on rules and conditions. it is not practical to try to implement each rule and policy inside each component of the hybrid environment.
+
+## Navigating the Choices in a Hybrid World
+
+The advantage of a hybrid cloud is its flexibility, allowing you to choose the best service for each task. But how do you find the right balance of services? Consider your business needs and match them with an appropriate architectural approach.
+
+You want platforms that meet the business's service level requirements. For tasks needing real-time performance and guaranteed uptime, choose a public service with high Quality of Service (QoS) or a fully private service your company controls.
+
+For services like customer relationship management, where availability and manageability are crucial, a SaaS environment is ideal. From both an architectural and a business process perspective, you need to determine which services need to interact and which can operate independently.
+
+Ultimately, aim to create an optimized environment that meets your customers' needs effectively.
+
+## Optimizing for Workloads
+
+Optimizing workloads across different environments is a key principle of hybrid cloud computing. Without starting with workload optimization and balancing, meeting customer needs will be challenging.
+
+One approach to enable this is federation, which links different environments at the interface level. This requires common interfaces across public and private cloud services. Even if services are not fully federated, users must have an easy way to access data or business services across various environments and networks. 
+
+However, achieving true portability and interoperability of workloads across hybrid clouds is still in its early stages.
+
+## Supporting a Dynamic Life Cycle
+
+The life cycle of cloud computing differs significantly from traditional computing environments due to its service-oriented architecture, which abstracts details away from users. Unlike traditional setups, cloud environments enforce discipline and are designed to support changes in users, applications, and workloads. This dynamic nature allows businesses to adapt quickly, such as supporting temporary projects with fluctuating developer numbers. Cloud computing speeds up application development and deployment, reduces misunderstandings between development and deployment teams, and simplifies adding capacity or users, especially after acquisitions. Additionally, security updates and changes are more straightforward in a cloud environment.
+
+As you start thinking about supporting a dynamic life cycle to support a hybrid cloud environment, consider the following:
+
+- Think about an overall services-based model that breaks down traditional disconnected silos of applications, processes, and services.
+- Think about creating an environment with fewer dependencies so that when you add new cloud services, you will have the flexibility to advance as the industry advances.
+- Think about the performance requirements that will give your customers excellent experiences.
+- Think about creating a predictable, safe, and well-governed environment that will support business operations in the long run.
 
 
