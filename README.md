@@ -382,3 +382,13 @@ As you start thinking about supporting a dynamic life cycle to support a hybrid 
 - Think about creating a predictable, safe, and well-governed environment that will support business operations in the long run.
 
 # Managing a Hybrid and Multicloud Environment
+## Managing SaaS Applications
+
+
+
+
+
+
+
+
+
