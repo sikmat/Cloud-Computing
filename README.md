@@ -403,3 +403,9 @@ A business modernized with a cloud-based office productivity suite, enabling emp
 Cloud Access Management (CAM) is a specialized form of identity management for cloud services. CAM allows users to be explicitly granted rights to specific SaaS applications and governs the information they can access. It formalizes which company personnel can access which SaaS applications and their rights within those applications. For example, HR employees may update all employees’ job performance ratings, while others can only see their own information.
 
 IT departments are interested in tracking how many employees use each SaaS application and what they use it for. This usage data can help IT negotiate better terms with vendors, potentially leading to more favorable licensing agreements if multiple business units use the same application. Additionally, by observing usage patterns, IT may identify opportunities to purchase other tools to improve business operations or see the need to integrate one SaaS application with others.
+
+## Managing External Cloud Resources
+
+
+
+
