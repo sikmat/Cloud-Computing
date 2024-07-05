@@ -406,6 +406,113 @@ IT departments are interested in tracking how many employees use each SaaS appli
 
 ## Managing External Cloud Resources
 
+Understanding who is using cloud services is important because that is where management should be focused. Management of cloud services is typically practiced in IT and software development organizations.
+
+### Visibility and Control of External Resources
+You need to have the ability to apply controls so that you can gain visibility into the cloud applications and services.
+
+The biggest management challenges of external cloud resources include identifying the most appropriate services, verifying their characteristics (performance, security, cost, etc.), and ensuring exclusive use of these services. Exclusive use is important because once a service is selected, significant investments in training, testing, and infrastructure are made to integrate it effectively. Using a different service with the same functionality can double these costs.
+
+Since using resources and building applications are technical activities, their management should be driven by the development organization or IT. These teams have the necessary knowledge of the required functionality, service integration into the product framework, and the business's long-term technical goals.
+
+**The general cycle for approving, using, and reusing cloud services involves the following steps:**
+
+1. **Identify and define the functional requirements** of the software being developed.
+2. **Research available cloud resources** from current providers and, if necessary, extend the search to other providers to ensure a good match or to support a multicloud approach.
+3. **Perform tests in a pilot project** to verify that the identified resources meet the functional requirements.
+4. **If testing is successful, establish a business relationship** with the service vendor and access the production version of the resource. If unsuccessful, return to step 2 or consider building the resource internally.
+5. **Document the new service** and make it available to the full development organization.
+6. **Regularly review existing resources**, their requirements, operational history, and issues.
+
+If requirements or resources have changed, consider restarting the process at step 2 to evaluate new resources that may be a better fit.
+
+### The Importance of Self-Service
+
+Creating a catalog of approved computing resources is essential for consistent and predictable management. While cloud providers make their services easily accessible and attractive with low pay-as-you-go prices, companies should limit employee choices to these approved resources to maintain control and manageability.
+
+_The challenge is to make it easier for employees to use the company’s catalogue to select what they want rather than go to the cloud themselves. To do so, the company must get ahead of the curve to understand the requirements and needs of development organizations._
+
+## Service Level Agreements(SLAs)
+
+Every cloud resource includes a service level agreement (SLA) that details the provider's deliverables and the customer's responsibilities. The SLA outlines key characteristics such as availability, accuracy, response time, throughput, and security. These traits are crucial for ensuring the selected resources meet the performance requirements of the services or applications that will use them.
+
+Many grey areas exist with regards to what the vendor is responsible for when disruptions occur. SLAs also include performance claims, with cloud vendors often competing on uptime guarantees. For instance, a 99.99% uptime versus a 99.999% uptime can mean 47 more minutes of uptime annually, which can be either minor or critical depending on the workload, such as a test environment versus a retailer’s transactional system. Failure of a computing resource to meet SLAs can and should be grounds for canceling contracts.
+
+### Addressing Poor Cloud and Computing Behaviors
+
+Many corporate users bring their own devices to the workplace or use them when they are working remotely. The IT organization is responsible for making sure that the right software and the right best practices are in place to ensure safety and security. IT organizations can take steps to avoid these dangerous behaviors, starting with employee education about the dangers of poor security practices. Many companies implement governance strategies that explicitly control which systems employees can access and the data they are qualified to read or modify. Often, governance is based on the specific job the employee is performing with role-based access control (RBAC).
+
+A new generation has grown up with social media and uses it to share information, answer questions, and generally extend the user’s community outside the company’s boundaries. Many social media users do understand the risks, but some do not and may not recognize the danger in sharing corporate information or business practices outside the company.
+
+## Managing Internal Cloud Resources
+
+As cloud usage becomes widespread for delivering services, managing these resources effectively is crucial for a business's success. When a business provides cloud services to its employees and partners, it typically uses private or hybrid clouds instead of public ones. In a hybrid cloud setup, the business might use public cloud services for internal purposes, making it both a consumer and a provider of cloud services.
+
+Many challenges in using cloud services apply whether the business provides these services to its employees, customers, or partners. The main difference is that public cloud services cater to a wide variety of users, while private or hybrid clouds are customized to meet the specific needs of the business.
+
+## Managing a Hybrid Cloud Environment
+
+Businesses are using both public and private clouds together more often. This mix gives them flexibility, scalability, and good performance for their internal computer needs.
+
+Today, public clouds offer strong security along with a wide range of services and resources. Companies that choose to use private or hybrid clouds might have stricter requirements than in the past. As cloud technology grows and becomes essential to business plans, organizations are likely to choose applications and resources that are well-reviewed and have strong security measures. In private or hybrid cloud setups, the approval process for these choices becomes very important.
+
+### Understanding the Role of Internal SLAs
+
+When a company operates as a private or hybrid cloud provider for its internal users, it should set clear SLAs for the resources and services it offers. This formalizes the operational standards that users can expect and increases satisfaction with internal services. SLAs establish measurable targets for performance and other operational aspects like mean time between failures. They help determine whether issues with applications stem from the application itself or from the resources and services it relies on.
+
+In a public cloud environment, managing resources and services is handled by the cloud vendor or third-party software provider. These providers are responsible for monitoring operations to ensure SLAs are met. In contrast, in a private cloud setup, it's typically the IT operations team's responsibility to monitor software performance and adherence to SLAs.
+
+Public cloud providers serve many customers, so they may not always respond immediately to SLA deviations. In contrast, a company managing its own private cloud has a singular customer (itself) and must ensure all applications and resources work effectively. Executives often monitor SLA compliance closely because performance issues can impact the company's profitability.
+
+## Managing Internal Services
+
+### Supporting Cloud Customers
+
+Supporting internal users of private or hybrid cloud applications is essential for managing these environments effectively. Users expect prompt assistance when they encounter issues, whether with third-party applications supported externally or in-house applications developed by internal teams. Support teams aim to deliver high-quality, timely support and often focus on reducing support calls through improved software reliability and usability. Close collaboration between development and support teams is crucial for providing excellent support services.
+
+### Monitoring Resources Imported from the Public Cloud
+
+In a hybrid cloud setup, where public cloud resources complement private cloud services, verifying resource performance and SLA compliance involves several approaches:
+
+1. **Testing in Public Cloud**: Setting up test software in the public cloud allows for independent performance sampling without impacting application performance. However, results may not directly reflect application-specific performance.
+
+2. **Testing in Hybrid Cloud**: Conducting tests within the hybrid cloud offers more consistency with application experience but can affect overall infrastructure performance because that is where the testing is operating.
+
+3. **Utilizing Operational Dashboards**: Checking if tested resources provide operational information or dashboards for performance insights.
+
+4. **Application Instrumentation**: Logging actual resource performance within the hybrid environment minimally impacts application performance. This method is considered optimal for accurate monitoring and integration with broader application monitoring.
+
+# Monitoring the Cloud Infrastructure
+
+Public cloud vendors provide information about the operational status of major subsystems and services within their cloud environments. The same type of information should be maintained for private and hybrid clouds. Although this information is usually high level, ensuring that basic services are working properly should be the first thing that support people look to verify.
+
+
+# Monitoring Applications and Services
+
+Applications generate valuable insights through user actions and logs, benefiting support, development, and IT teams. Support uses user action data to assist users effectively, while developers analyze logs to troubleshoot crashes. User experience experts leverage this data to enhance interfaces and streamline user experiences, while product managers ensure features are used correctly and explore improvements. Logs also reveal operational patterns for application enhancement, and instrumenting applications with Key Performance Indicators (KPIs) helps assess goal achievement.
+
+_Increasingly, artificial intelligence and machine learning are being applied to old operational data to discover the patterns associated with problems so that current performance can be quickly assessed for recurring problems or the symptoms of problems that can then be evaluated by other tools._
+
+### Constructing Dashboards
+
+Harnessing this information into a form that is useful requires at least two parts:
+- Analysis software that processes and reduces the data to a manageable form.
+- A visualization technique that makes the information easy for people to recognize.
+
+Dashboards are versatile tools for presenting operational information tailored to different audiences. They can be customized to show specific views for support, displaying data to aid in user issue resolution. Developers benefit from performance metrics and user activity insights. Product managers rely on dashboards for KPIs and usability data, while executives use them for high-level status updates and customer acceptance metrics.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
