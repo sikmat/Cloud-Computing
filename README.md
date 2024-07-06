@@ -595,6 +595,8 @@ In essence, cloud standards mitigate risks associated with interoperability, ven
 
 # 6. A Closer Look at Cloud Services
 
+One of the most important benefits businesses gain from cloud computing is the ability to modularize application services so that they can be linked together to create a cohesive environment. The new generation of agile application development and deployment means software services can be developed and deployed virtually anywhere.
+
 ## The Importance of Modularity
 
 The importance of modularity in cloud computing underscores the shift towards designing lightweight, independent services that can be developed and deployed by small, autonomous teams. This modular approach offers significant advantages in terms of performance, cost-efficiency, and scalability. Services encapsulate essential business functions, delivering them reliably and efficiently, which is crucial in cloud environments where agility and workload portability are paramount.
@@ -604,6 +606,225 @@ Historically, services have evolved from early subroutine libraries to today's s
 In the context of cloud computing, the transition to cloud-native services is essential. These services are designed to operate independently across various public and private cloud environments, necessitating standardized approaches. The term "cloud native" emphasizes leveraging the distributed nature of the cloud to enhance agility, flexibility, and modularity in application development and deployment.
 
 Overall, embracing a service-oriented mindset in the cloud era enables organizations to build resilient, adaptable systems that accelerate time-to-market and optimize resource utilization across diverse cloud environments.
+
+## Explaining Microservices
+
+A cloud environment requires that you think differently about what an application is and how it operates in this highly distributed environment. Cloud-enabled applications are modular, distributed, and automated, requiring advanced technologies beyond traditional software. Simply moving a monolithic application to the cloud offers no cost or flexibility benefits. Instead, adopting a modular approach using microservices is more effective. Microservices are independently developed, platform-agnostic components that communicate through standardized APIs, making it easier for developers to locate and use services. The future of cloud applications is cloud-native, composed of independent microservices that collectively deliver full application functionality.
+
+**Microservices are essential for a true cloud environment due to four key benefits**:
+
+1. **Simplified Application Development**: Each microservice is designed for a specific and limited purpose, allowing small development teams to focus on narrowly defined functions. This clarity makes the development process more straightforward and manageable.
+2. **Easier and Faster Code Changes**: Code changes are smaller and less complex than in a monolithic application. This simplifies the process of fixing issues or upgrading services, enhancing development speed and flexibility.
+3. **Scalability**: Microservices enable easier scalability, both up and down. It is simpler to deploy additional instances of a service or modify the service as requirements change.
+4. **Reliability Through Testing and Validation**: Microservices are thoroughly tested and validated. When new applications use existing microservices, developers can trust their integrity without needing continual testing, ensuring reliable performance.
+
+### The Imperative to Manage Microservices
+
+Microservices help organizations maximize cloud benefits by being packaged within containers, which abstract applications from their runtime environments. These containers are managed through orchestration services that handle processes, logic, and data services, simplifying deployment and management without worrying about version numbers or specific configurations. Given the large number of microservices and instances across many systems, combining microservices with Kubernetes offers an optimal way to manage cloud environments effectively. Further details on Kubernetes and container orchestration are provided later in the chapter.
+
+## Containers
+
+Docker, CRI-O, Containerd, and frakti are four of the most common container run times. You can think of a container as packaged up software code along with all of its dependencies so that it can run consistently across clouds and on premises. This encapsulation simplifies development by removing concerns about version numbers and platform-specific configurations.
+
+Developers can confidently transfer code between various environments, such as from a desktop to a VM or from Windows to Linux, knowing it will run predictably. This single container package simplifies the bundling of application code with necessary files, libraries, and dependencies, enabling developers to focus on application logic and supporting services.
+
+### Containers Bring Virtualization Abstraction to the Next Level
+
+Containers enhance virtualization by abstracting the operating system, allowing multiple applications to run directly on the OS kernel without each needing its own OS. This makes containers smaller and more portable than virtual machines (VMs), enabling quicker deployment and easier movement between environments.
+
+Initially, businesses ran applications on separate physical servers to prevent resource conflicts, but this approach was costly and unscalable. Virtualization allowed multiple VMs to run on a single server, optimizing hardware use and isolating applications. VMs improved efficiency and cost-effectiveness but still required each VM to have its own OS.
+
+Containers take this a step further by packaging applications with their dependencies, ensuring consistent operation across environments. They support continuous integration and delivery (CI/CD) practices, enabling rapid adaptation to changing user demands and market conditions. Companies like Facebook, Netflix, and Uber leverage containerization and microservices to quickly respond to competitive threats and customer needs, emphasizing the need for agility in today's business landscape.
+
+### Container Orchestration
+As applications and microservices are containerized, managing these containers becomes essential. Container orchestration platforms streamline processes such as installation, scaling, and management of containerized applications. They automate scaling for higher demand, updating, version control, monitoring, logging, and debugging. Kubernetes is the most popular container orchestration platform.
+
+### Kubernetes
+Kubernetes, or "k8s," is an open-source platform created by Google for managing containerized workloads and services. It has become the dominant choice due to its functionality, ecosystem, and portability across various cloud environments. Kubernetes standardizes the orchestration of container services, supports stateful and stateless applications, and provides cluster federation and auto-balancing across hybrid clouds. It supports a large ecosystem of tools and services, enabling automation of development, scaling, and operation across clusters.
+
+**Benefits of Kubernetes**:
+- **Standardization**: Provides a standardized way to build, package, deploy, and run applications.
+- **Portability**: Ensures applications are portable across multiple cloud providers, avoiding vendor lock-in.
+- **Auto-scaling**: Supports horizontal auto-scaling to handle increased application demand.
+- **High Availability**: Maintains high availability through continual health checks of nodes and containers.
+- **Automated Rollouts**: Allows for automated application updates without causing downtime.
+- **Extensibility**: Kubernetes is extensible and can support various use cases across different implementations. Custom Resource Definitions (CRD) extend the API to add additional services to the cluster, enhancing visibility and functionality.
+
+### Cataloguing Services
+In a microservices approach, cataloguing services is crucial to keep track of each service, ensuring they are fully vetted, tested, and approved. A catalogue helps locate services and understand their characteristics, essential for managing services originating from different sources in a cloud environment.
+
+## Defining Cloud Native Applications
+
+Cloud native refers to a modern software approach that uses small, independent pieces of software called microservices. Each microservice runs inside its own container, which is like a small, self-contained package that includes everything the software needs to run. These containers are managed dynamically by orchestration tools, like Kubernetes, which coordinate how they work together.
+
+The goal is to optimize how computer resources are used, making applications more flexible, scalable, and efficient. Cloud native applications are also designed for continuous delivery, meaning they can be updated and deployed quickly and reliably. This approach is ideal for modern, fast-moving environments where agility and scalability are critical.
+
+The Cloud Native Computing Foundation offers a clear definition of cloud native:
+
+**Container packaged**: A standard way to package applications that is resource efficient. More applications can be densely packed using a standard container format.
+**Dynamically managed**: A standard way to discover, deploy, and scale up and down containerized applications.
+**Microservices oriented**: A method to decompose the application into modular, independent services that interact through well-defined service contracts.
+
+_A cloud native application fully exploits the benefits of cloud technology. It is important to recognize that a cloud native application is not defined by where it is running, but rather how it is built. Because a cloud native environment is based on containerization, it is not physically tied to a specific hardware or operating system. Therefore, cloud native applications are designed to work on a variety of cloud environments._
+
+## Communicating Using APIs
+
+APIs play a crucial role in highly distributed environments like microservices and containers, enabling communication essential for leveraging cloud benefits. They facilitate interprocess communication among microservices and containers, serving as connectivity mechanisms across various IT assets.
+
+Historically, APIs have been integral for integrating services and managing resources in Infrastructure as a Service (IaaS) and Software as a Service (SaaS) environments. In multicloud scenarios, APIs become even more vital, allowing connectivity and integration with multiple cloud providers.
+
+For instance, the Google Maps API illustrates how APIs enable embedding maps into applications, with costs incurred based on usage beyond a free threshold. In microservices architectures using containers, APIs manage more granular interactions due to the modular nature of microservices.
+
+Today, numerous API management platforms cater to diverse cloud needs, requiring careful evaluation to align with specific application environments and requirements.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
